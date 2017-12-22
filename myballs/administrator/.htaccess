@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "want to enter?"
+AuthUserFile /var/www/myballs/.passwords
+Require valid-user
