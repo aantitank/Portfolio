@@ -47,8 +47,8 @@
                         <p style="text-align: right"> © Винни Пух</p>
                     </li>
                     <?php if (User::isGuest()): ?>
-                        <li ><a href="/user/login/"><i ></i>  Log in</a></li>
-                        <li><a href="/user/register/"><i ></i> Sig in</a></li>
+                        <li ><a href="/user/login/"><i ></i>  Sign in</a></li>
+                        <li><a href="/user/register/"><i ></i> Sig up</a></li>
                     <?php else: ?>
                         <li><a href="/cabinet/"><img src="<?php echo User::getUserAvatar()['image']; ?>" style=" margin-left: 10px; height: 50px;"></a></li>
                         <li><a href="/cabinet/"><i ></i>Profile</a></li>
