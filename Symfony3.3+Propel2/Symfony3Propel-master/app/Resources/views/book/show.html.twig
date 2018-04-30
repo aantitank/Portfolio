@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <table class="table table-striped">
+        <tr>
+            <td>ID: {{ book.id }}</td>
+        </tr>
+        <tr>
+            <td>Title: {{ book.title }}</td>
+        </tr>
+        <tr>
+            <td>ISBN: {{ book.isbn }}</td>
+        </tr>
+    <table>
+    <a href="{{ path('book_index') }}">Back to List</a>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form action="{{ path('book_edit', { id: book_id }) }}" method="post" >
+       {{ form_widget(form_edit) }}
+        <input type="submit" />
+    </form>
+    <a href="{{ path('book_index') }}">Back to List</a>
+{% endblock %}

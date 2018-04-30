@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="default" package="src/AppBundle/Model/" namespace="AppBundle\Model" defaultIdMethod="native">
+
+    <table name="book">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="title" type="varchar" required="true" size="100" />
+        <column name="ISBN" type="varchar" required="true" size="20" />
+    </table>
+
+</database>

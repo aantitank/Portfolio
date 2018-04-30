@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<a href="{{ path('book_new') }}">New</a>
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>ISBN</th>
+            <th>Action</th>
+        </tr>
+        {% for book in books %}
+        <tr>
+            <td>{{ book.id }}</td>
+            <td>{{ book.title }}</td>
+            <td>{{ book.ISBN }}</td>
+            <td>
+				<a href="{{ path('book_show', { id: book.id }) }}">Show</a>
+                <a href="{{ path('book_edit', { id: book.id }) }}">Edit</a>
+                <a href="{{ path('book_delete', { id: book.id }) }}">Delete</a>
+            </td>
+        </tr>
+        {% endfor%}
+    </table>
+
+{% endblock %}

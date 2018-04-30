@@ -1,0 +1,10 @@
+<Fixtures>
+    <Book Namespace="AppBundle\Model">
+        <b1 Title="My title1" Isbn="0000001" />
+		<b2 Title="My title2" Isbn="0000002" />
+		<b3 Title="My title3" Isbn="0000003" />
+		<b4 Title="My title4" Isbn="0000004" />
+		<b5 Title="My title5" Isbn="0000005" />
+		<b6 Title="My title6" Isbn="0000006" />
+    </Book>
+</Fixtures>
